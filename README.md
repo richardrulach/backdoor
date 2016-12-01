@@ -5,6 +5,10 @@ ideally this is used for test systems that are opaque and in which it can be dif
 
 ##architecture
 
+###code structure
+
+###configuration files
+
 ##design
 
 ##interactivity
