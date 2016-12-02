@@ -8,6 +8,11 @@ ideally this is used for test systems that are opaque and in which it can be dif
 ###code structure
 
 ###configuration files
+There are three levels of configuration files in the application.
+* web.config - holds the database connectionstrings and the location of the pages configuration file
+* pages.xml - holds the details of each page and the queries that are used on that page
+* query_xxxxx.xml - hold the details of individual queries
+
 
 ##design
 
