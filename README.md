@@ -21,3 +21,6 @@ provided by the raphaeljs library
 
 ##interactivity
 
+##security
+no security is implemented by default on these pages - it is recommended that a level of security is implemented by anyone using this system
+
