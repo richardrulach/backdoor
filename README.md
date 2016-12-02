@@ -13,8 +13,11 @@ There are three levels of configuration files in the application.
 * pages.xml - holds the details of each page and the queries that are used on that page
 * query_xxxxx.xml - hold the details of individual queries
 
-
 ##design
+standard design elements
+
+##visualisation
+provided by the raphaeljs library
 
 ##interactivity
 
