@@ -1,8 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <query>
   <parameters>
-    <parameter name="Applicationid" type="INT-CSV" default="" replaceValue="" />
+    <parameter name="Applicationid" display="TEXT" type="INT-CSV" default="" replaceValue="" />
   </parameters>
+
+  <lists>
+    <list id="" name="">
+      <item name="" value="" />
+    </list>
+  </lists>
   <sql>
     <![CDATA[
     
