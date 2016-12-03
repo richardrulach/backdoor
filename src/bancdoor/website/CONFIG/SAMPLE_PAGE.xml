@@ -1,4 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<root>
+<page>
+  
+  <header>
+    <title></title>
+    <header></header>
+  </header>
 
-</root>
+  <options>
+    <environments>
+      <default>LIVE</default>
+      <order onlyThisOrder="NO"></order>
+    </environments> 
+  </options>
+
+</page>

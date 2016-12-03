@@ -1,4 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<root>
-  
-</root>
+<query>
+  <parameters>
+    <parameter name="Applicationid" type="INT-CSV" default="" replaceValue="" />
+  </parameters>
+  <sql>
+    <![CDATA[
+    
+    ]]>
+  </sql>
+</query>
