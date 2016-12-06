@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<querySet name="Application Stages">
+  <query type="SQL">
+    <parameters>
+      <parameter name="Applicationid" display="TEXT" type="INT-CSV" default="0" replaceValue="APPID" />
+    </parameters>
+    <sql>
+      <![CDATA[
+USE Origin_Main
+GO
+
+SELECT
+	ast.applicationid, 
+	stages.StageID, 
+	stages.StageDescription, 
+	ast.CurrentStage,
+	ast.Created,
+	ast.CreatedBy,
+	users.UsersFullName
+FROM 
+	dbo.ApplicationStages ast
+
+	INNER JOIN dbo.Stages
+	ON ast.StageID = dbo.Stages.StageID
+
+	INNER JOIN dbo.Users
+	ON dbo.Stages.CreatedBy = dbo.Users.UserID
+WHERE 
+	applicationid = ||APPID||
+ORDER BY 
+	ApplicationStageID
+      ]]>
+    </sql>
+  </query>
+</querySet>

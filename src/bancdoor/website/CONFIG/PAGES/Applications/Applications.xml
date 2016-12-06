@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page name="Application Info">
+
+  <header>
+    <title>Application Info</title>
+    <header>Application Info</header>
+  </header>
+
+  <options>
+    <environments>
+    </environments>
+  </options>
+  
+  <queries>
+    <query name="Application Stages" config="qry_ApplicationStages.xml" />
+  </queries>
+
+</page>
