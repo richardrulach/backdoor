@@ -1,2 +1,56 @@
-﻿body {
+﻿*, body
+{
+    font-family: Helvetica;
 }
+    
+table 
+{
+    margin-top:5px;
+    margin-bottom:15px;
+    border: 1px solid black;
+}
+    
+th 
+{
+    text-align:left;
+    border: 1px solid black;
+    padding:5px;
+}
+    
+td
+{
+    font-weight:normal;
+    font-size: 0.95em;
+    border: 1px solid black;
+    padding:5px;
+}
+    
+.timestamp
+{
+    margin-top:25px;
+    margin-bottom:5px;
+}
+    
+.formElement
+{
+    margin-top: 10px;
+        
+}
+    
+.parameterSet
+{
+    width:350px;
+    float:left;
+}
+    
+.queryContainer
+{
+    padding-top:20px;
+    clear:both;
+}
+    
+.envHeader 
+{
+    font-weight: bold;   
+}
+    
