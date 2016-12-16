@@ -5,10 +5,21 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class masterPages_Root : System.Web.UI.MasterPage
+namespace GetBanctecDebugInfo._masterPages
 {
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class Root : System.Web.UI.MasterPage
     {
+        PageBuilder _pb;
 
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            _pb = new PageBuilder(Server.MapPath("~\\CONFIG\\Application.xml"));
+            litNavigation.Text = _pb.GetNavigation("");
+        }
+
+        public PageBuilder GetPageBuilder()
+        {
+            return _pb;
+        }
     }
 }
