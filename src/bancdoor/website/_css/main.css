@@ -2,7 +2,9 @@
 {
     font-family: Helvetica;
 }
-    
+
+/***************************************/
+/* RESULTS TABLE DISPLAY */
 table 
 {
     margin-top:5px;
@@ -25,12 +27,8 @@ td
     padding:5px;
 }
     
-.timestamp
-{
-    margin-top:25px;
-    margin-bottom:5px;
-}
-    
+/***************************************/
+/* PARAMETER SETUP */
 .formElement
 {
     margin-top: 10px;
@@ -60,4 +58,19 @@ td
 {
     margin-right:10px;
 }
+
+
+/* MISCELLANEOUS */
+.timestamp
+{
+    margin-top:25px;
+    margin-bottom:5px;
+}
+
+a
+{
+    white-space:nowrap;
+}
+
+
     
