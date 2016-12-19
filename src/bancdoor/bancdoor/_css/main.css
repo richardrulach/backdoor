@@ -67,10 +67,13 @@ td
     margin-bottom:5px;
 }
 
-a
+
+#pageLinks li 
 {
-    white-space:nowrap;
+    display: inline;
 }
 
-
-    
+#navigation a
+{
+    margin-right: 15px;
+}
