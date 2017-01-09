@@ -1,0 +1,79 @@
+﻿*, body
+{
+    font-family: Helvetica;
+}
+
+/***************************************/
+/* RESULTS TABLE DISPLAY */
+table 
+{
+    margin-top:5px;
+    margin-bottom:15px;
+    border: 1px solid black;
+}
+    
+th 
+{
+    text-align:left;
+    border: 1px solid black;
+    padding:5px;
+}
+    
+td
+{
+    font-weight:normal;
+    font-size: 0.95em;
+    border: 1px solid black;
+    padding:5px;
+}
+    
+/***************************************/
+/* PARAMETER SETUP */
+.formElement
+{
+    margin-top: 10px;
+        
+}
+    
+.parameterSet
+{
+    width:350px;
+    float:left;
+}
+    
+.queryContainer
+{
+    padding-top:20px;
+    clear:both;
+}
+    
+.envHeader 
+{
+    font-weight: bold;   
+}
+
+
+/* NAVIGATION ELEMENTS */
+.nav_page
+{
+    margin-right:10px;
+}
+
+
+/* MISCELLANEOUS */
+.timestamp
+{
+    margin-top:25px;
+    margin-bottom:5px;
+}
+
+
+#pageLinks li 
+{
+    display: inline;
+}
+
+#navigation a
+{
+    margin-right: 15px;
+}

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <header>
+    <title></title>
+    <header></header>
+  </header>
+  <options>
+    <environments>
+      <default>LIVE</default>
+      <order onlyThisOrder="NO"></order>
+    </environments> 
+  </options>
+  <queries>
+    <query name="" config="" />
+  </queries>
+</page>
