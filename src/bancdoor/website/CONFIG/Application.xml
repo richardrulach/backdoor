@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<application>
-  <navigation>
-    <page name="Applications" path="PAGES\Applications\Applications.xml" />
-    <page name="Products" path="PAGES\Products\Products.xml" />
-    <page name="Documents" path="PAGES\Documents\Documents.xml" />
-  </navigation>  
-</application>

@@ -6,10 +6,14 @@ using System.Xml;
 using System.Collections;
 using System.IO;
 
-namespace GetBanctecDebugInfo
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace Bancdoor
 {
     public struct page
     {
+        public int id;
         public string name, url;
     }
 
@@ -45,6 +49,7 @@ namespace GetBanctecDebugInfo
                 foreach (XmlNode xnode in xdoc.SelectNodes("//navigation/page"))
                 {
                     page p = new page();
+                    p.id = Int32.Parse(xnode.Attributes["pageid"].Value);
                     p.name = xnode.Attributes["name"].Value;
                     p.url = xnode.Attributes["path"].Value;
 
@@ -64,16 +69,19 @@ namespace GetBanctecDebugInfo
             return sReturn;
         }
 
-        public String GetNavigation(String format)
+        public List<HyperLink> GetNavigationLinks()
         {
 
-            String sReturn = string.Empty;
+            List<HyperLink> lst = new List<HyperLink>();
             foreach (page p in _pages)
             {
-                sReturn += "<a class=\"nav_page\" href=\"javascript:ChangePage(" + p.name + ")\">" + p.name + "</a>";
+                HyperLink h = new HyperLink();
+                h.Text = p.name;
+                h.NavigateUrl = "~/?pid=" + p.id.ToString();
+                lst.Add(h);
             }
 
-            return sReturn;
+            return lst;
         }
 
     }

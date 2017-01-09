@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace GetBanctecDebugInfo
+namespace Bancdoor
 {
     public partial class Default1 : System.Web.UI.Page
     {

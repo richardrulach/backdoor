@@ -4,7 +4,6 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
     <link rel="Stylesheet" type="text/css" href="../_css/main.css" />
     <script type="text/javascript" src="../_js/jquery.js"></script>
     <script type="text/javascript" src="../_js/raphael.js"></script>
@@ -15,9 +14,8 @@
     <div>
         <h1>Bancdoor</h1>
     </div>
-    <div class="navigation">
-        <asp:Literal ID="litNavigation" runat="server" />
-    </div>
+    <asp:Panel ID="navigation" runat="server">
+    </asp:Panel>
     <form id="form1" runat="server">
     <div>
         <asp:ContentPlaceHolder ID="mainContent" runat="server">
